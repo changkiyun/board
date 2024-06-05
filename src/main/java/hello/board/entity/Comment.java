@@ -14,4 +14,8 @@ public class Comment {
     @ManyToOne
     @JoinColumn(name = "BOARD_ID")
     private Board board;
+
+    @ManyToOne
+    @JoinColumn(name = "COMMENT_ID")
+    private Comment comment;
 }

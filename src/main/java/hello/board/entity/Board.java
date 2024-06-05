@@ -17,4 +17,8 @@ public class Board {
 
     @OneToMany(mappedBy = "board")
     private List<Comment> comments = new ArrayList<>();
+
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID")
+    private Member member;
 }
