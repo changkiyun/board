@@ -40,7 +40,7 @@ public class BoardService {
                 .build();
     }
 
-    //Todo: 삭제 후 재 등록시 ID가 삭제된 게시글 다음 번호로 생성 됨
+    //Todo: 삭제 후 재 등록시 ID가 삭제된 게시글 다음 번호로 생성 됨ㄹ
     public BoardResponse boardEdit(Long boardId, String boardBody) {
         return boardRepository.findById(boardId)
                 .map(board -> {
